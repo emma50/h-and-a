@@ -12,10 +12,10 @@ export default function Testimonials() {
       {/* bg={{base: "#FAFDFF", _dark: "#000A0F"}} */}
       <Box minH="559.77px">
       {/* top="88px" left="49px" */}
-        <Box maxWidth="755px" maxH="172.77px" mb="5rem">
-          {/* left="51px" */}
+        <Box maxWidth="755px" maxH={{base: "auto", md: "172.77px"}} mb="5rem">
+          {/* left="51px" width="400px"*/}
           <Image src="/images/double-quotes.png" alt="#" width="153px" height="118.15px" opacity="20%"/>
-          <Text maxW="715px" height="108.77px" fontWeight="700" fontSize="40px" lineHeight="60px" color={{base: "#000000", _dark: "#ffffff"}} textAlign="start" mt="-60px" ml="16px">Hear from Our Students About <Text as="span" color={{ base: "#036096", _dark: "#69C6FC" }}>Their Experience With Us.</Text></Text>
+          <Text maxW="715px" height={{base: "auto", md: "108.77px"}} fontWeight="700" fontSize="40px" lineHeight="60px" color={{base: "#000000", _dark: "#ffffff"}} textAlign="start" mt="-60px" ml="16px">Hear from Our Students About <Text as="span" color={{ base: "#036096", _dark: "#69C6FC" }}>Their Experience With Us.</Text></Text>
         </Box>
         <CustomSlider/> 
       </Box>
@@ -25,7 +25,7 @@ export default function Testimonials() {
 
 export function CustomSlider() {
   return (
-    <Box maxW="1342px" height="345px" >
+    <Box maxW="1342px" height={{base: "auto", md: "345px" }}>
       {/* gap="36px" */}
       <Swiper
         slidesPerView={3}
@@ -53,7 +53,8 @@ export function CustomSlider() {
         }}
         navigation={true}
         modules={[Keyboard, Pagination, Navigation]}
-        className="mySwiper"
+        // className="mySwiper"
+        className="swiper"
       >
         {swiperCards.map((card) => {
           const {id, img, name, position, desc} = card;
@@ -71,7 +72,7 @@ export function CustomSlider() {
 //@ts-ignore
 export const SwiperCard = ({img, name, position, desc}) => {
   return (
-    <Card.Root width="400px" height="307px" bg={{base: "#EBF7FF", _dark: "#000D14"}}>
+    <Card.Root maxWidth="400px" height={{base: "auto", md: "307px"}} bg={{base: "#EBF7FF", _dark: "#000D14"}}>
       {/* width="320px" height="307px */}
       <Card.Body>
         <HStack mb="6" gap="11px" width="196px" height="58px">
@@ -87,7 +88,8 @@ export const SwiperCard = ({img, name, position, desc}) => {
             <Text textStyle="sm" width="130px" height="25px" fontWeight="400" fontSize="14px" lineHeight="25.2px" color={{base: "#4F4C67", _dark: "#9B98B3"}}>{position}</Text>
           </Stack>
         </HStack>
-        <Card.Description color={{base: "#4F4C67", _dark: "#9B98B3"}} fontWeight="500" fontSize="16px" lineHeight="28.16px" width="352px" height="168px">{desc}</Card.Description>
+        <Card.Description color={{base: "#4F4C67", _dark: "#9B98B3"}} fontWeight="500" fontSize="16px" lineHeight="28.16px" maxWidth="352px" height="168px">{desc}</Card.Description>
+        {/*width="352px"  */}
       </Card.Body>
     </Card.Root>
   )

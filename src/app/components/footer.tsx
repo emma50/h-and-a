@@ -1,4 +1,4 @@
-import { Box, Flex, Image } from "@chakra-ui/react"
+import { Box, Flex, Image, Text } from "@chakra-ui/react"
 import { infoLinks, quickLinks, ourPrograms, contacts } from "@/utils/data"
 import { RiFacebookBoxLine } from "react-icons/ri";
 import { PiLinkedinLogoBold } from "react-icons/pi";
@@ -7,12 +7,13 @@ import { FiInstagram } from "react-icons/fi";
 
 export default function Footer() {
   return (
-    <Box color="#000A0F" bg={{ base: "#fcfcfc", _dark: "#000A0F"}} width="100%" maxH={{base: "auto", lg: "40.375rem"}} margin="auto" marginTop="0" >  {/* marginTop="367.618rem" */}
+    <Box color="#000A0F" maxW="1440px" maxH={{base: "auto", lg: "40.375rem"}} margin="auto" marginTop="0" >  {/* marginTop="367.618rem" */}
+    {/* bg={{ base: "#fcfcfc", _dark: "#000A0F"}} */}
       <Flex flexDirection={{base: "column", lg: "row"}} gap="7.938rem" p="4rem">
-        <Flex flexDirection="column" width="324px" height="306.76px" gap="24px" color={{ base: "#383838", _dark: "#C7C7C7"}}>
-          <Flex flexDirection="column" gap="24px" height="223px" textAlign={{base: "center", lg: "left"}}>
+        <Flex flexDirection="column" maxWidth="324px" height={{base: "auto", md: "306.76px"}} gap="24px" color={{ base: "#383838", _dark: "#C7C7C7"}} mx={{base: "auto", lg: "0"}}>
+          <Flex flexDirection="column" gap="24px" height={{base: "auto", md: "223px"}} textAlign={{base: "center", lg: "left"}} width="auto">
             <Image src="/images/product.png" alt="Logo" height="2.438rem" width="6.344rem"/>
-            <Box fontWeight="400" fontSize="14.48px" lineHeight="20.83px">{infoLinks.desc}</Box>
+            <Text fontWeight="400" fontSize="14.48px" lineHeight="20.83px" width="auto">{infoLinks.desc}</Text>
           </Flex>
           <Box width="142px" mx={{base: "auto", lg: "0"}}>
             <Box fontWeight="600" fontSize="17.42px" lineHeight="26.14px">{infoLinks.connect}</Box>

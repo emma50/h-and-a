@@ -5,6 +5,7 @@ html, body {
   margin: 0 auto;
   /* padding: 2rem; */
   text-align: center;
+  /* overflow-x: hidden; */
 }
 
 .swiper {
@@ -21,7 +22,8 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 307px;
+  /* height: 307px; */
+  min-height: 307px;
   gap: 10px;
   /* width: 400px; */
   width: 320px;

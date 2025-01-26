@@ -2,13 +2,13 @@ import { Box, Text, Flex, Image, AccordionItem, AccordionItemContent, AccordionI
 
 export default function Faq() {
   return (
-    <Box maxH="1037px" maxW="1440px" py="80px">
+    <Box maxH={{base: "auto", md: "1037px"}} maxW="1440px" py="80px">
       <Box>
         <Image />
       </Box>
-      <Flex flexDir="column" maxW="697px" maxH="142px" gap="4px" alignItems="center" justifyContent="center" mx="auto">
-        <Text maxW="697px" maxH="142px" fontWeight="800" fontSize="44.56px" lineHeight="79.5px" textAlign="center" color={{base: "#000000", _dark: "#ffffff"}}>Frequently Asked Questions</Text>
-        <Text maxW="382px" maxH="38px" fontWeight="400" fontSize="20.89px" lineHeight="32.84px" textAlign="center" color={{base: "#000000", _dark: "#ffffff"}}>Know more <Text as="span" color={{base: "#000000", _dark: "#ffffff"}}>about our programs</Text></Text>
+      <Flex flexDir="column" maxW="697px" maxH={{base: "auto", md: "142px"}} gap="4px" alignItems="center" mb={{base: "4rem", lg: "1rem"}} justifyContent="center" mx="auto">
+        <Text maxW="697px" maxH={{base: "auto", md: "142px"}} fontWeight="800" fontSize="44.56px" lineHeight="79.5px" textAlign="center" color={{base: "#000000", _dark: "#ffffff"}} mb={{base: "2rem", lg: "1rem"}}>Frequently Asked Questions</Text>
+        <Text maxW="382px" maxH={{base: "auto", md: "38px"}} fontWeight="400" fontSize="20.89px" lineHeight="32.84px" textAlign="center" color={{base: "#000000", _dark: "#ffffff"}}>Know more <Text as="span" color={{base: "#000000", _dark: "#ffffff"}}>about our programs</Text></Text>
       </Flex>
       {/* Custom Accordion */}  
       <Box mt="20px">
