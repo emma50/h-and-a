@@ -24,7 +24,7 @@ export const CustomAccordion = () => {
       {items.map((item, index) => (
         <AccordionItem key={index} value={item.value} >
           <AccordionItemTrigger fontWeight="500" fontSize="18px" color={{ base: "#000000", _dark: "#ffffff" }} lineHeight="32px" textAlign="start">{item.title}</AccordionItemTrigger>
-          <AccordionItemContent textAlign="start" color={{ base: "#000000", _dark: "#ffffff" }} lineHeight="30px"><Text as="span" fontWeight="600" fontSize="14px">Ans - </Text>{item.text}</AccordionItemContent>
+          <AccordionItemContent textAlign="start" color={{ base: "#000000", _dark: "#ffffff" }} lineHeight="30px">{item.text}</AccordionItemContent>
         </AccordionItem>
       ))}
     </AccordionRoot>
