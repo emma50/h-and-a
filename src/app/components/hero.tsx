@@ -4,7 +4,7 @@ import { LiaLightbulbSolid } from "react-icons/lia";
 export default function Hero() {
   return (
     <>
-      <Flex gap="64px" align="center" justify="space-between" flexDirection={{ base: "column", lg: "row" }} maxH={{base: "auto", lg: "467px"}} py="80px" pb={{base: "0", md: "80px"}} px="20px" mx="auto" maxW="1232px" maxHeight={{ base: "auto", lg: "467px" }}>
+      <Flex gap="64px" align="center" justify="space-between" flexDirection={{ base: "column", lg: "row" }} maxH={{base: "auto", lg: "467px"}} py="80px" pb={{base: "0", md: "80px"}} mx="auto" maxW="1232px" maxHeight={{ base: "auto", lg: "467px" }}>
         <Left />
         <Right />
       </Flex>
@@ -32,15 +32,15 @@ export const Left = () => {
           <Text maxW="457px" textAlign={{base: "center", md: "start"}} color={{base: "#000000", _dark: "#ffffff"}} fontWeight="400" fontSize="20px" lineHeight="33px">Our robust curriculum and immersive classes at <Text as="span" color={{ base: "#036096", _dark: "#69C6FC" }}>H&A infotech</Text> helps equip students with the relevant skills needed to launch a successful career</Text>
         </Flex>
 
-        {/* Buttons */}s
+        {/* Buttons */}
         <Flex gap="1rem" flexDirection={{base: "column", md: "row"}}>
-          <Box bg="red">
-            <Link href="/" bg={{base: "#036096", _dark: "#69C6FC"}} color={{base: "#FFFFFF", _dark: "#000000"}} px="1.25rem" py="0.625rem" borderRadius="0.313rem" fontSize="1rem" fontWeight="600" width="204px" height="60px" rounded="7px" display="flex" justifyContent="center">
+          <Box display="flex" justifyContent="center">
+            <Link href="/" bg={{base: "#036096", _dark: "#69C6FC"}} color={{base: "#FFFFFF", _dark: "#000000"}} px="1.25rem" py="0.625rem" borderRadius="0.313rem" fontSize="1rem" fontWeight="600" width="204px" height="60px" rounded="7px" display="flex" justifyContent="center" textDecoration="none">
               Register now
             </Link>
           </Box>
-          <Box>
-            <Link href="/" bg={{base: "#F0F9FF", _dark: "#000D14"}} color={{base: "#036096", _dark: "#69C6FC"}} px="1.25rem" py="0.625rem" borderRadius="0.313rem" fontSize="1rem" fontWeight="600" width="204px" height="60px" rounded="7px" border={{base: "1px solid #036096", _dark: "1px solid #69C6FC"}} display="flex" justifyContent="center">
+          <Box display="flex" justifyContent="center">
+            <Link href="/" bg={{base: "#F0F9FF", _dark: "#000D14"}} color={{base: "#036096", _dark: "#69C6FC"}} px="1.25rem" py="0.625rem" borderRadius="0.313rem" fontSize="1rem" fontWeight="600" width="204px" height="60px" rounded="7px" border={{base: "1px solid #036096", _dark: "1px solid #69C6FC"}} display="flex" justifyContent="center" textDecoration="none">
               Explore courses
             </Link>
           </Box>
