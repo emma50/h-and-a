@@ -69,10 +69,9 @@ export function CustomSlider() {
   )
 }
 
-//@ts-ignore
-export const SwiperCard = ({img, name, position, desc}) => {
+export const SwiperCard = ({img, name, position, desc}: {img: string; name: string; position: string; desc: string;}) => {
   return (
-    <Card.Root maxWidth="400px" height={{base: "auto", md: "307px"}} bg={{base: "#EBF7FF", _dark: "#000D14"}}>
+    <Card.Root maxWidth="400px" height={{base: "auto", md: "307px"}} bg={{base: "#EBF7FF", _dark: "#000D14"}} overflow="hidden">
       {/* width="320px" height="307px */}
       <Card.Body>
         <HStack mb="6" gap="11px" width="196px" height="58px">
@@ -88,11 +87,9 @@ export const SwiperCard = ({img, name, position, desc}) => {
             <Text textStyle="sm" width="130px" height="25px" fontWeight="400" fontSize="14px" lineHeight="25.2px" color={{base: "#4F4C67", _dark: "#9B98B3"}}>{position}</Text>
           </Stack>
         </HStack>
-        <Card.Description color={{base: "#4F4C67", _dark: "#9B98B3"}} fontWeight="500" fontSize="16px" lineHeight="28.16px" maxWidth="352px" height="168px">{desc}</Card.Description>
+        <Card.Description color={{base: "#4F4C67", _dark: "#9B98B3"}} fontWeight="500" fontSize="16px" lineHeight="28.16px" maxWidth="352px" height="168px" overflowY="scroll" className="scrollbar">{desc}</Card.Description>
         {/*width="352px"  */}
       </Card.Body>
     </Card.Root>
   )
 }
-
-

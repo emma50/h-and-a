@@ -41,8 +41,7 @@ export const CardList = () => {
   )
 }
 
-//@ts-ignore
-export const CustomCard = ({ img, title, desc, url, urlText }) => {
+export const CustomCard = ({ img, title, desc, url, urlText }: { img: string; title: string; desc: string; url: string; urlText: string }) => {
 // #000D14
   return (
     <Card.Root bg={{base: "#FFFFFF", _dark: "#000A0F"}} gap="4" maxWidth="24.688rem" minH="502.04px">
