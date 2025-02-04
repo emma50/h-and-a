@@ -44,9 +44,9 @@ export const CardList = () => {
 export const CustomCard = ({ img, title, desc, url, urlText }: { img: string; title: string; desc: string; url: string; urlText: string }) => {
 // #000D14
   return (
-    <Card.Root bg={{base: "#FFFFFF", _dark: "#000A0F"}} gap="4" maxWidth="24.688rem" minH="502.04px">
+    <Card.Root bg={{base: "#FFFFFF", _dark: "#000A0F"}} gap="1" maxWidth="24.688rem" minH="502.04px" overflowY="hidden" height={{base: "556px", md: "529.88px"}}>
       {/* borderRadius="10px" boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)" */}
-      <Box>
+      <Box pt="1rem">
         <Image
           src={img}
           alt="#"
@@ -56,13 +56,12 @@ export const CustomCard = ({ img, title, desc, url, urlText }: { img: string; ti
           borderTopLeftRadius="15px"
           borderTopRightRadius="15px"
           m="auto"
-          // pt="1rem"
         />
       </Box>
       <Box minW={{base: "auto", md: "344px"}} height={{base: "auto", md: "194px"}}>
-        <Card.Body gap={{base:"3rem", md: "2"}} width="100%" height="auto">
-          <Card.Title fontWeight="700" fontSize="28.12px" lineHeight="42.18px" height="38.03px" color={{base: "#0D0D0D", _dark: "#FFFFFF"}}>{title}</Card.Title>
-          <Card.Description fontWeight="300" fontSize="18.37px" lineHeight="30.03px" color={{base: "#251F1F", _dark: "#ECE8E8"}}>{desc.length < 103 ? desc : `${desc.substr(0, 103)}...`}</Card.Description>
+        <Card.Body gap="2" width="100%" height="auto">
+          <Card.Title fontWeight="700" fontSize="28.12px" lineHeight="42.18px" minH="38.03px" color={{base: "#0D0D0D", _dark: "#FFFFFF"}}>{title}</Card.Title>
+          <Card.Description fontWeight="300" fontSize="18.37px" lineHeight="30.03px" color={{base: "#251F1F", _dark: "#ECE8E8"}} overflowY="scroll" className="scrollbar" height="119px">{desc}</Card.Description>
         </Card.Body>
         <Card.Footer minW="83px" height="21px" fontWeight="600" fontSize="14.32px" lineHeight="21.48px" color={{base: "#0D0D0D", _dark: "#ffffff"}}>
           <Link href={url}>{urlText}</Link>
