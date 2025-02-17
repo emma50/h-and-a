@@ -166,19 +166,25 @@ export const swiperCards = [
     name: "Daniel Folaranmi",
     position: "UI/UX Designer",
     desc: "My experience at H&A Academy was truly transformative! The hands-on approach, expert mentorship, and real-world projects helped me build confidence and refine my UI/UX skills. I left with not just knowledge but practical expertise that prepared me for the industry. Highly recommended!",
+    country: "Nigeria",
+    flag: "/images/ng-flag.gif",
   },
   {
     id: 2,
     img: "/images/testimonials/scrum-master.jpg",
-    name: "Sandra Matt",
+    name: "Zainab Kushu",
     position: "Scrum Master",
     desc: "Attending H&R Academy was a game-changer for me. I gained hands-on experience and The academy's interactive learning environment and experienced instructors helped me develop strong skills in leadership, communication, and problem-solving.",
+    country: "Nigeria",
+    flag: "/images/ng-flag.gif",
   },
   {
     id: 3,
-    img: "images/testimonials/business-analyst.jpg",
+    img: "/images/testimonials/business-analyst.jpg",
     name: "Olanrewaju Ajibola",
     position: "Business Analyst",
     desc: "Thanks to H&A Infotech, I've launched my career in business analysis with confidence and expertise. Their innovative tech training and personalized guidance have provided me with the tools to excel in my new role. I have leveraged their top-tier resources to quickly adapt to the fast-paced tech landscape, turning my business potential into tangible success. H&A Infotech has empowered me to bridge the gap between ambition and achievement, paving the way for a rewarding and fulfilling journey in the world of technology and business analysis.",
+    country: "United Kingdom",
+    flag: "/images/uk-flag.gif"
   },
 ]

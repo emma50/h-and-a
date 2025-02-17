@@ -1,4 +1,4 @@
-import { Box, Text, Image, Card, HStack, Stack } from "@chakra-ui/react"
+import { Box, Text, Image, Card, HStack, Stack, Flex } from "@chakra-ui/react"
 import { Avatar } from "@/components/ui/avatar"
 // import { LuCheck, LuX } from "react-icons/lu"
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -57,10 +57,10 @@ export function CustomSlider() {
         className="swiper"
       >
         {swiperCards.map((card) => {
-          const {id, img, name, position, desc} = card;
+          const {id, img, name, position, desc, flag, country} = card;
           return (
             <SwiperSlide>
-              <SwiperCard key={id} img={img} name={name} position={position} desc={desc} />
+              <SwiperCard key={id} img={img} name={name} position={position} desc={desc} flag={flag} country={country} />
             </SwiperSlide>
           )
         })}
@@ -69,12 +69,12 @@ export function CustomSlider() {
   )
 }
 
-export const SwiperCard = ({img, name, position, desc}: {img: string; name: string; position: string; desc: string;}) => {
+export const SwiperCard = ({img, name, position, desc, flag, country}: {img: string; name: string; position: string; desc: string; flag: string; country: string}) => {
   return (
     <Card.Root maxWidth="400px" height={{base: "auto", md: "307px"}} bg={{base: "#EBF7FF", _dark: "#000D14"}} overflow="hidden">
       {/* width="320px" height="307px */}
       <Card.Body>
-        <HStack mb="6" gap="11px" width="196px" height="58px">
+        <HStack mb="6" gap="11px" minW="196px" height="58px">
           <Avatar
             src={img}
             name={name}
@@ -84,7 +84,19 @@ export const SwiperCard = ({img, name, position, desc}: {img: string; name: stri
           />
           <Stack gap="0">
             <Text fontWeight="600" color={{base: "#036096", _dark: "#69C6FC"}} fontSize="18px" lineHeight="32.4px" minW="97px" height="32px">{name}</Text>
-            <Text textStyle="sm" width="130px" height="25px" fontWeight="400" fontSize="14px" lineHeight="25.2px" color={{base: "#4F4C67", _dark: "#9B98B3"}}>{position}</Text>
+            <Text textStyle="sm" minW="130px" height="25px" fontWeight="400" fontSize="14px" lineHeight="25.2px" color={{base: "#4F4C67", _dark: "#9B98B3"}}>{position}</Text>
+            <Flex gap="5px">
+              <Text textStyle="sm" height="25px" fontWeight="400" fontSize="14px" lineHeight="25.2px" color={{base: "#4F4C67", _dark: "#9B98B3"}}>{country}</Text>
+              <Flex alignItems="center">
+                <Avatar
+                  src={flag}
+                  name=""
+                  width="22px"
+                  height="20px"
+                  borderRadius="30px"
+                />
+              </Flex>
+            </Flex>
           </Stack>
         </HStack>
         <Card.Description color={{base: "#4F4C67", _dark: "#9B98B3"}} fontWeight="500" fontSize="16px" lineHeight="28.16px" maxWidth="352px" height="168px" overflowY="scroll" className="scrollbar">{desc}</Card.Description>
