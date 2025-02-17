@@ -163,7 +163,7 @@ export const swiperCards = [
   {
     id: 1,
     img: "/images/testimonials/ui-ux-designer.jpg",
-    name: "John Mark",
+    name: "Daniel Folaranmi",
     position: "UI/UX Designer",
     desc: "My experience at H&A Academy was truly transformative! The hands-on approach, expert mentorship, and real-world projects helped me build confidence and refine my UI/UX skills. I left with not just knowledge but practical expertise that prepared me for the industry. Highly recommended!",
   },
@@ -177,7 +177,7 @@ export const swiperCards = [
   {
     id: 3,
     img: "images/testimonials/business-analyst.jpg",
-    name: "Sruti Dangal",
+    name: "Olanrewaju Ajibola",
     position: "Business Analyst",
     desc: "Thanks to H&A Infotech, I've launched my career in business analysis with confidence and expertise. Their innovative tech training and personalized guidance have provided me with the tools to excel in my new role. I have leveraged their top-tier resources to quickly adapt to the fast-paced tech landscape, turning my business potential into tangible success. H&A Infotech has empowered me to bridge the gap between ambition and achievement, paving the way for a rewarding and fulfilling journey in the world of technology and business analysis.",
   },
