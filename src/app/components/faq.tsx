@@ -2,7 +2,7 @@ import { Box, Text, Flex, Image, AccordionItem, AccordionItemContent, AccordionI
 
 export default function Faq() {
   return (
-    <Box maxH={{base: "auto", md: "1037px"}} maxW="1440px" py="80px">
+    <Box maxH={{base: "auto", md: "1037px"}} maxW="1440px" py="80px" id="faqs">
       <Box>
         <Image />
       </Box>

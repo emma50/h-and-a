@@ -1,3 +1,4 @@
+import { dataAnalysisRegistrationLink } from "@/utils/data";
 import { Text, Box, Flex, Link, Image } from "@chakra-ui/react"
 import { LiaLightbulbSolid } from "react-icons/lia";
 
@@ -35,7 +36,7 @@ export const Left = () => {
         {/* Buttons */}
         <Flex gap="1rem" flexDirection={{base: "column", md: "row"}}>
           <Box display="flex" justifyContent="center">
-            <Link href="/" bg={{base: "#036096", _dark: "#69C6FC"}} color={{base: "#FFFFFF", _dark: "#000000"}} px="1.25rem" py="0.625rem" borderRadius="0.313rem" fontSize="1rem" fontWeight="600" width="204px" height="60px" rounded="7px" display="flex" justifyContent="center" textDecoration="none">
+            <Link href={dataAnalysisRegistrationLink} bg={{base: "#036096", _dark: "#69C6FC"}} color={{base: "#FFFFFF", _dark: "#000000"}} px="1.25rem" py="0.625rem" borderRadius="0.313rem" fontSize="1rem" fontWeight="600" width="204px" height="60px" rounded="7px" display="flex" justifyContent="center" textDecoration="none">
               Register now
             </Link>
           </Box>

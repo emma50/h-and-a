@@ -2,22 +2,22 @@ export const headerList = [
   {
     id: 1,
     title: "Programs",
-    link: "/programs",
+    href: "#courses",
   },
   {
     id: 2,
     title: "About",
-    link: "/about",
+    href: "#about",
   },
   {
     id: 3,
     title: "Enterprise",
-    link: "/enterprise",
+    href: "#",
   },
   {
     id: 4,
     title: "Careers",
-    link: "/careers",
+    href: "#",
   },
 ]
 
@@ -36,22 +36,22 @@ export const quickLinks = [
   {
     id: 1,
     name: 'Home',
-    url: '/',
+    href: "#"
   },
   {
     id: 2,
     name: 'Courses',
-    url: '/courses',
+    href: "#courses",
   },
   {
     id: 3,
     name: 'About Us',
-    url: '/about-us',
+    href: "#about",
   },
   {
     id: 4,
     name: 'FAQs',
-    url: '/faqs',
+    href: "#faqs",
   },
 ];
 
@@ -100,12 +100,16 @@ export const contacts = [
   },
   {
     id: 2,
-    name: 'h&a@gmail.com',
+    name: 'contactus@hainfotech.uk',
   },
   {
     id: 3,
-    name: '01-123-127898 / 01-102-2938',
+    name: '+44 7769392416',
   },
+  // {
+  //   id: 3,
+  //   name: '01-123-127898 / 01-102-2938',
+  // },
 ];
 
 export const serviceCards = [
@@ -128,7 +132,8 @@ export const serviceCards = [
   {
     id: 3,
     img: "images/service-3.svg",
-    title: 'Product Design',
+    title: 'Business Process Optimization',
+    // desc: "Gain the knowledge to help you build a career in Design.",
     desc: "Gain the basic knowledge to help you build a career in Design and grow through fundamental user-centred approaches to stunning user-interfaces.",
     url: '/',
     urlText: 'Learn more',
@@ -136,23 +141,23 @@ export const serviceCards = [
   {
     id: 4,
     img: "images/service-2.png",
-    title: 'Product Management',
+    title: 'Tech Academy',
     desc: "Set yourself up for success and a rewarding career with our product school.",
     url: '/',
     urlText: 'Learn more',
   },
+  // {
+  //   id: 5,
+  //   img: "images/service-5.png",
+  //   title: 'Cloud Engineering',
+  //   desc: "Learn the basic skills you need to transition into a career in DevOps and Cloud Engineer.",
+  //   url: '/',
+  //   urlText: 'Learn more',
+  // },
   {
     id: 5,
-    img: "images/service-5.png",
-    title: 'Cloud Engineering',
-    desc: "Learn the basic skills you need to transition into a career in DevOps and Cloud Engineer.",
-    url: '/',
-    urlText: 'Learn more',
-  },
-  {
-    id: 6,
     img: "images/service-6.svg",
-    title: 'Q/A Software Testing',
+    title: 'Staffing/Recruitment',
     desc: "Learn the basic skills you need to transition into a career in DevOps and Cloud Engineer.",
     url: '/',
     urlText: 'Learn more',
@@ -181,10 +186,12 @@ export const swiperCards = [
   {
     id: 3,
     img: "/images/testimonials/business-analyst.jpg",
-    name: "Olanrewaju Ajibola",
+    name: "Olanrewaju Ajiboye",
     position: "Business Analyst",
     desc: "Thanks to H&A Infotech, I've launched my career in business analysis with confidence and expertise. Their innovative tech training and personalized guidance have provided me with the tools to excel in my new role. I have leveraged their top-tier resources to quickly adapt to the fast-paced tech landscape, turning my business potential into tangible success. H&A Infotech has empowered me to bridge the gap between ambition and achievement, paving the way for a rewarding and fulfilling journey in the world of technology and business analysis.",
     country: "United Kingdom",
     flag: "/images/uk-flag.gif"
   },
 ]
+
+export const dataAnalysisRegistrationLink = "https://docs.google.com/forms/d/e/1FAIpQLSdjSPhQ46xJtGKNiWe_BdzqJvWq1x5qu2fi2Y3W_VHGmvEm0w/viewform?usp=header"

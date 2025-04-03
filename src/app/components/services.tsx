@@ -3,7 +3,7 @@ import { serviceCards } from "@/utils/data"
 
 export default function Services() {
   return (
-    <Box bg={{base: "#F0F9FF", _dark: "#000D14"}} maxW="1266px" mx="auto" py="80px" pb={{base: "0", md: "80px"}}>
+    <Box bg={{base: "#F0F9FF", _dark: "#000D14"}} maxW="1266px" mx="auto" py="80px" pb={{base: "0", md: "80px"}} id="courses">
       <Flex gap="60px" flexDirection="column">
         <Flex flexDirection="column" gap="12px" maxW="819px" alignItems="center" mx="auto">
           <Text maxW="299px" width="299px" lineHeight="48.34px" fontSize="45.63px" fontWeight="800" color={{base: "#0D0D0D", _dark: "#FFFFFF"}} textAlign="center">Our Services</Text>
@@ -58,9 +58,9 @@ export const CustomCard = ({ img, title, desc, url, urlText }: { img: string; ti
           m="auto"
         />
       </Box>
-      <Box minW={{base: "auto", md: "344px"}} height={{base: "auto", md: "194px"}}>
+      <Box minW={{base: "auto", md: "344px"}} height={{base: "auto", md: "254px"}}>
         <Card.Body gap="2" width="100%" height="auto">
-          <Card.Title fontWeight="700" fontSize="28.12px" lineHeight="42.18px" minH="38.03px" color={{base: "#0D0D0D", _dark: "#FFFFFF"}}>{title}</Card.Title>
+          <Card.Title fontWeight="700" fontSize={{base: "20.8px", md: "22.8px"}} lineHeight="42.18px" minH="38.03px" color={{base: "#0D0D0D", _dark: "#FFFFFF"}}>{title}</Card.Title>
           <Card.Description fontWeight="300" fontSize="18.37px" lineHeight="30.03px" color={{base: "#251F1F", _dark: "#ECE8E8"}} overflowY="scroll" className="scrollbar" height="119px">{desc}</Card.Description>
         </Card.Body>
         <Card.Footer minW="83px" height="21px" fontWeight="600" fontSize="14.32px" lineHeight="21.48px" color={{base: "#0D0D0D", _dark: "#ffffff"}}>

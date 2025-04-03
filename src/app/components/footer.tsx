@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react"
+import { Box, Flex, Image, Text, Link } from "@chakra-ui/react"
 import { infoLinks, quickLinks, ourPrograms, contacts } from "@/utils/data"
 import { RiFacebookBoxLine } from "react-icons/ri";
 import { PiLinkedinLogoBold } from "react-icons/pi";
@@ -19,10 +19,15 @@ export default function Footer() {
             <Box fontWeight="600" fontSize="17.42px" lineHeight="26.14px">{infoLinks.connect}</Box>
             {/* For social networks */}
             <Flex gap="4px" justifyContent={{base: "center", lg: "start"}} alignItems={{base: "center", lg: "start"}}>
-              <Box><RiFacebookBoxLine width="22.122px" height="22.12px" /></Box>
-              <Box><PiLinkedinLogoBold width="22.122px" height="22.12px" /></Box>
-              <Box><FiTwitter width="22.122px" height="22.12px" /></Box>
-              <Box><FiInstagram width="22.122px" height="22.12px" /></Box>
+              {socialLinks.map((item) => {
+                return (
+                  <Box>
+                    <Link key={item.id} href={item.href}>
+                      {item.icon}
+                    </Link>
+                  </Box>
+                )
+              })}
             </Flex>
           </Box>
         </Flex>
@@ -31,7 +36,11 @@ export default function Footer() {
             <Box fontWeight="700" fontSize="19.37px" color={{ base: "#000000", _dark: "#ffffff"}}>Quick Links</Box>
             {quickLinks.map((item) => {
               return (
-                <Box key={item.id} color={{ base: "#383838", _dark: "#C7C7C7"}} fontWeight="300" fontSize="14.83px">{item.name}</Box>
+                <Box key={item.id}>
+                  <Link href={item.href} color={{ base: "#383838", _dark: "#C7C7C7"}} fontWeight="300" fontSize="14.83px">
+                    {item.name}
+                  </Link>
+                </Box>
               )
             })}
           </Flex>
@@ -62,3 +71,30 @@ export default function Footer() {
     </Box>
   )
 }
+
+const socialLinks = [
+  {
+    id: 1,
+    name: "Facebook",
+    icon: <RiFacebookBoxLine width="22.122px" height="22.12px" />,
+    href: "https://www.facebook.com/hainfotech",
+  },
+  {
+    id: 2,
+    name: "LinkedIn",
+    icon: <PiLinkedinLogoBold width="22.122px" height="22.12px" />,
+    href: "#",
+  },
+  {
+    id: 3,
+    name: "Twitter",
+    icon: <FiTwitter width="22.122px" height="22.12px" />,
+    href: "https://twitter.com/hainfotech",
+  },
+  {
+    id: 4,
+    name: "Instagram",
+    icon: <FiInstagram width="22.122px" height="22.12px" />,
+    href: "https://www.instagram.com/hainfotech",
+  },
+]
