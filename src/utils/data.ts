@@ -21,9 +21,12 @@ export const headerList = [
   },
 ]
 
+export const dataAnalysisRegistrationLink = "https://docs.google.com/forms/d/e/1FAIpQLSdjSPhQ46xJtGKNiWe_BdzqJvWq1x5qu2fi2Y3W_VHGmvEm0w/viewform?usp=header"
+
+
 export const headerButton = {
   title: "Join a cohort",
-  link: "/cohort",
+  link: dataAnalysisRegistrationLink,
 }
 
 export const infoLinks = {
@@ -193,5 +196,3 @@ export const swiperCards = [
     flag: "/images/uk-flag.gif"
   },
 ]
-
-export const dataAnalysisRegistrationLink = "https://docs.google.com/forms/d/e/1FAIpQLSdjSPhQ46xJtGKNiWe_BdzqJvWq1x5qu2fi2Y3W_VHGmvEm0w/viewform?usp=header"
