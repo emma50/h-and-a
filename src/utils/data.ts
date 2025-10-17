@@ -121,7 +121,7 @@ export const serviceCards = [
     img: "/images/service-1.png",
     title: 'Frontend Development',
     desc: "Start your journey to becoming a full-stack developer. Learn how to write different kinds of code for complex frontend and backend tasks.",
-    url: '/frontendDevelopment',
+    url: '/frontend-development',
     urlText: 'Learn more',
   },
   {
@@ -129,7 +129,7 @@ export const serviceCards = [
     img: "images/service-2.png",
     title: 'Project Management',
     desc: "Set yourself up for success and a rewarding career with our product school.",
-    url: '/projectManagement',
+    url: '/project-management',
     urlText: 'Learn more',
   },
   {
@@ -138,7 +138,7 @@ export const serviceCards = [
     title: 'Graphic Design',
     // desc: "Gain the knowledge to help you build a career in Design.",
     desc: "Gain the basic knowledge to help you build a career in Design and grow through fundamental user-centred approaches to stunning user-interfaces.",
-    url: '/graphicDesign',
+    url: '/graphic-design',
     urlText: 'Learn more',
   },
   {
@@ -146,7 +146,7 @@ export const serviceCards = [
     img: "images/service-4.png",
     title: 'Content Creation',
     desc: "Set yourself up for success and a rewarding career with our product school.",
-    url: '/contentCreation',
+    url: '/content-creation',
     urlText: 'Learn more',
   },
   {
@@ -154,7 +154,7 @@ export const serviceCards = [
     img: "images/service-5.png",
     title: 'Cyber Security',
     desc: "Learn the basic skills you need to transition into a career in DevOps and Cloud Engineer.",
-    url: '/cyberSecurity',
+    url: '/cyber-security',
     urlText: 'Learn more',
   },
   {
@@ -162,7 +162,7 @@ export const serviceCards = [
     img: "images/service-6.svg",
     title: 'QA/Software Testing',
     desc: "A program that is designed to equip you with the required skills you need to take on quality assurance and software testing roles.",
-    url: '/softwareAutomation',
+    url: '/software-automation',
     urlText: 'Learn more',
   },
   {
@@ -170,7 +170,7 @@ export const serviceCards = [
     img: "images/service-7.png",
     title: 'Blockchain',
     desc: "Learn the basic skills you need to transition into a career in DevOps and Cloud Engineer.",
-    url: '/blockchainTech',
+    url: '/blockchain-tech',
     urlText: 'Learn more',
   },
   {
@@ -178,7 +178,7 @@ export const serviceCards = [
     img: "images/service-8.png",
     title: 'Data Analytics',
     desc: "A program that is designed to equip you with the required skills you need to take on quality assurance and software testing roles.",
-    url: '/dataAnalytics',
+    url: '/data-analytics',
     urlText: 'Learn more',
   },
 ]
@@ -198,7 +198,7 @@ export const swiperCards = [
     img: "/images/testimonials/scrum-master.jpg",
     name: "Zainab Kushu",
     position: "Scrum Master",
-    desc: "Attending H&R Academy was a game-changer for me. I gained hands-on experience and The academy's interactive learning environment and experienced instructors helped me develop strong skills in leadership, communication, and problem-solving.",
+    desc: "Attending H&A Academy was a game-changer for me. I gained hands-on experience and The academy's interactive learning environment and experienced instructors helped me develop strong skills in leadership, communication, and problem-solving.",
     country: "Nigeria",
     flag: "/images/ng-flag.gif",
   },

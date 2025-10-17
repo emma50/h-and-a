@@ -30,7 +30,6 @@ function App() {
 
       {/* Dynamically map all programs */}
       {Object.entries(pageData).map(([key, data]) => {
-        console.log(key, data);
         return (
           <Route 
             key={key}

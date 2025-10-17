@@ -12,7 +12,9 @@ export default function Footer() {
       <Flex flexDirection={{base: "column", lg: "row"}} gap="7.938rem" p="4rem">
         <Flex flexDirection="column" maxWidth="324px" height={{base: "auto", md: "306.76px"}} gap="24px" color={{ base: "#383838", _dark: "#C7C7C7"}} mx={{base: "auto", lg: "0"}}>
           <Flex flexDirection="column" gap="24px" height={{base: "auto", md: "223px"}} textAlign={{base: "center", lg: "left"}} width="auto">
-            <Image src="/images/product.png" alt="Logo" height="2.438rem" width="6.344rem"/>
+            <a href="/">
+              <Image src="/images/product.png" alt="Logo" height="2.438rem" width="6.344rem"/>
+            </a>
             <Text fontWeight="400" fontSize="14.48px" lineHeight="20.83px" width="auto">{infoLinks.desc}</Text>
           </Flex>
           <Box width="142px" mx={{base: "auto", lg: "0"}}>
@@ -66,7 +68,7 @@ export default function Footer() {
         <Box width="1px" height="1px"></Box>
       </Box>
       <Box p="4rem">
-        <Flex lineHeight="25px" fontSize="16.32px" fontWeight="300" color={{ base: "#383838", _dark: "#C7C7C7"}}>Copyright ©2024 H&R Infotech. All Rights Reserved. </Flex>
+        <Flex lineHeight="25px" fontSize="16.32px" fontWeight="300" color={{ base: "#383838", _dark: "#C7C7C7"}}>Copyright ©2024 H&A Infotech. All Rights Reserved. </Flex>
       </Box>
     </Box>
   )

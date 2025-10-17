@@ -1,5 +1,5 @@
 export const pageData = {
-  dataAnalytics: {
+  "data-analytics": {
     hero: {
       title: "Data Analytics",
       desc: "Gain the skills to analyze, interpret, and visualize data for smarter business decisions. Our hands-on Data Analytics program equips you with the technical expertise and analytical mindset needed to thrive in today’s data-driven world.",
@@ -63,7 +63,7 @@ export const pageData = {
     regLink: "https://forms.gle/2khskeTs964tirjr8",
   },
 
-  blockchainTech: {
+  "blockchain-tech": {
     hero: {
       title: "Blockchain Technology",
       desc: "Learn how blockchain works, from smart contracts to decentralized apps (dApps). Gain the knowledge to shape the future of finance, security, and digital ownership.",
@@ -127,7 +127,7 @@ export const pageData = {
     regLink: "https://forms.gle/E6pqNBT85fFQwp6x6",
   },
 
-  softwareTesting: {
+  "software-testing": {
     hero: {
       title: "Software Automation Testing (QA)",
       desc: "Master manual and automation testing techniques using Selenium, JIRA, Postman, and TestNG. Ensure flawless performance for apps and software systems.",
@@ -191,7 +191,7 @@ export const pageData = {
     regLink: "https://forms.gle/rB1cbjA3QTK3WWkD7",
   },
 
-  cyberSecurity: {
+  "cyber-security": {
     hero: {
       title: "Information/Cyber Security",
       desc: "Gain the skills to defend systems and data from cyber threats. Learn ethical hacking, network defense, and risk management from experienced professionals.",
@@ -255,7 +255,7 @@ export const pageData = {
     regLink: "https://forms.gle/GydxUxJRFzovY3mU9",
   },
 
-  contentCreation: {
+  "content-creation": {
     hero: {
       title: "⁠Content Creation",
       desc: "Learn how to produce captivating content across social media, blogs, and video platforms. Develop storytelling, editing, and strategy skills to grow your personal or business brand.",
@@ -319,7 +319,7 @@ export const pageData = {
     regLink: " https://forms.gle/2iGqfYbwDUsMUGye7",
   },
 
-  projectManagement: {
+  "project-management": {
     hero: {
       title: "Project Management",
       desc: "Learn to plan, execute, and deliver successful projects using Agile, Scrum, and PMP principles. Gain leadership and organizational skills that make teams thrive.",
@@ -383,7 +383,7 @@ export const pageData = {
     regLink: "https://forms.gle/E8r61v5mn3EhtxCd8",
   },
 
-  graphicDesign: {
+  "graphic-design": {
     hero: {
       title: "Graphic Design",
       desc: "Master visual storytelling using tools like Adobe Photoshop, Illustrator, and Figma. Build strong design foundations and create impactful visuals for brands.",
@@ -447,7 +447,7 @@ export const pageData = {
     regLink: "https://forms.gle/vsq7QFHtt8tKCkMq9",
   },
 
-  frontendDevelopment: {
+  "frontend-development": {
     hero: {
       title: "Frontend Development",
       desc: "Learn to design and develop responsive, user-friendly websites using HTML, CSS, JavaScript, and React. Turn your ideas into digital experiences that engage users.",

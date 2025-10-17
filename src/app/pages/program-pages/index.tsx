@@ -41,6 +41,7 @@ export default function ProgramPage({data}: {data: any;}) {
           pl="2rem"
           py="2rem"
           justifyContent="center"
+          alignItems="center"
           bg={{base: "#F4F7FA", _dark: "#000D14"}}
           width={{
             base: "100%",
@@ -49,12 +50,13 @@ export default function ProgramPage({data}: {data: any;}) {
         >
           <Flex
             direction="column"
+            alignContent="center"
             gap="1rem"
             maxWidth="655px"
             textAlign="left"
           >
             <Text
-              fontFamily="Raleway"
+              // fontFamily="Raleway"
               color={{base: "#000000", _dark: "#ffffff"}}
               fontWeight="600"
               fontSize="40px"
@@ -89,6 +91,7 @@ export default function ProgramPage({data}: {data: any;}) {
           pl="3rem"
           py="2rem"
           justifyContent="center"
+          alignContent="center"
           bg={{base: "#F4F7FA", _dark: "#000D14"}}
           width={{
             base: "100%",
@@ -102,7 +105,7 @@ export default function ProgramPage({data}: {data: any;}) {
             textAlign="left"
           >
             <Text
-              fontFamily="Raleway"
+              // fontFamily="Raleway"
               color={{base: "#000000", _dark: "#ffffff"}}
               fontWeight="600"
               fontSize="40px"

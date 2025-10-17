@@ -1,4 +1,4 @@
-import { Box, Text, Flex, Button, Card, Image, Link } from "@chakra-ui/react"
+import { Box, Text, Flex, Button, Card, Image } from "@chakra-ui/react"
 import { serviceCards } from "@/utils/data"
 import NewsLetter from "./newsletter"
 
@@ -53,7 +53,7 @@ export const CustomCard = ({ img, title, desc, url, urlText }: { img: string; ti
           <Card.Description fontWeight="300" fontSize="18.37px" lineHeight="30.03px" color={{base: "#251F1F", _dark: "#ECE8E8"}} overflowY="scroll" className="scrollbar" height="119px">{desc}</Card.Description>
         </Card.Body>
         <Card.Footer minW="83px" height="21px" fontWeight="600" fontSize="14.32px" lineHeight="21.48px" color={{base: "#0D0D0D", _dark: "#ffffff"}}>
-          <Link href={url}>{urlText}</Link>
+          <a href={url}>{urlText}</a>
           {/* <Button variant="solid">{urlText}</Button> */}
         </Card.Footer>
       </Box>
