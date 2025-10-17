@@ -21,12 +21,12 @@ export const headerList = [
   },
 ]
 
-export const dataAnalysisRegistrationLink = "https://docs.google.com/forms/d/e/1FAIpQLSdjSPhQ46xJtGKNiWe_BdzqJvWq1x5qu2fi2Y3W_VHGmvEm0w/viewform?usp=header"
+export const cohortLink = "https://forms.gle/ppKpX7thJzqLxi9L9"
 
 
 export const headerButton = {
   title: "Join a cohort",
-  link: dataAnalysisRegistrationLink,
+  link: cohortLink,
 }
 
 export const infoLinks = {
