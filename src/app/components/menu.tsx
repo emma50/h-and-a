@@ -39,7 +39,7 @@ export const MenuLinks = ({ isOpen }) => {
       >
         {headerList.map((item) => {
           return (
-            <MenuItem to={item.href}>{item.title}</MenuItem>
+            <MenuItem key={item.id} to={item.href}>{item.title}</MenuItem>
           )
         })}
         <Box>

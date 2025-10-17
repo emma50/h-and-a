@@ -59,8 +59,8 @@ export function CustomSlider() {
         {swiperCards.map((card) => {
           const {id, img, name, position, desc, flag, country} = card;
           return (
-            <SwiperSlide>
-              <SwiperCard key={id} img={img} name={name} position={position} desc={desc} flag={flag} country={country} />
+            <SwiperSlide key={id}>
+              <SwiperCard img={img} name={name} position={position} desc={desc} flag={flag} country={country} />
             </SwiperSlide>
           )
         })}

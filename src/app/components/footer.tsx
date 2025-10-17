@@ -21,8 +21,8 @@ export default function Footer() {
             <Flex gap="4px" justifyContent={{base: "center", lg: "start"}} alignItems={{base: "center", lg: "start"}}>
               {socialLinks.map((item) => {
                 return (
-                  <Box>
-                    <Link key={item.id} href={item.href}>
+                  <Box key={item.id}>
+                    <Link href={item.href}>
                       {item.icon}
                     </Link>
                   </Box>
