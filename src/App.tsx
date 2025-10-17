@@ -1,13 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import LandingPage from "./app/pages/landing";
-// import BlockchainTechPage from "./app/pages/blockchain-tech";
-// import DataAnalyticsPage from "./app/pages/data-analytics";
-// import SoftwareAutomationPage from "./app/pages/software-automation";
-// import CyberSecurityPage from "./app/pages/cyber-security";
-// import FrontendDevelopmentPage from "./app/pages/frontend-development";
-// import ProjectManagementPage from "./app/pages/project-management";
-// import GraphicDesignPage from "./app/pages/graphic-design";
-// import ContentCreationPage from "./app/pages/content-creation";
 import { pageData } from "./app/data/pageData";
 import ProgramPage from "./app/pages/program-pages";
 
@@ -35,14 +27,6 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
-      {/* <Route path="/blockchain-tech" element={<BlockchainTechPage />} />
-      <Route path="/data-analytics" element={<DataAnalyticsPage />} />
-      <Route path="/software-automation" element={<SoftwareAutomationPage />} />
-      <Route path="/cyber-security" element={<CyberSecurityPage />} />
-      <Route path="/frontend-development" element={<FrontendDevelopmentPage />} />
-      <Route path="/project-management" element={<ProjectManagementPage />} />
-      <Route path="/graphic-design" element={<GraphicDesignPage />} />
-      <Route path="/content-creation" element={<ContentCreationPage />} /> */}
 
       {/* Dynamically map all programs */}
       {Object.entries(pageData).map(([key, data]) => {
