@@ -11,7 +11,7 @@ import PopupDialog from "@/app/components/dialog"
 export default function LandingPage() {
   return (
     <Box bg={{ base: "#F0F9FF", _dark: "#000D14" }} maxWidth="1440px" margin="0 auto" px="2rem" textAlign="center">
-      <PopupDialog scrollTargetId="courses" />
+      <PopupDialog />
       <Header />
       {/* This is the landing page */}
       <Hero />

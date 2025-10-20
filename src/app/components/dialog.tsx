@@ -13,7 +13,7 @@ const PopupDialog: React.FC<PopupDialogProps> = ({
   title = "🚀 Don't Miss Out! Free Tech Masterclass",
   description = "This Saturday, October 25th at 11 AM. Limited spots available.",
   buttonText = "Register Now & Secure My Place",
-  scrollTargetId = "courses",
+  // scrollTargetId = "courses",
 }) => {
   const [open, setOpen] = useState(false);
 
@@ -36,10 +36,11 @@ const PopupDialog: React.FC<PopupDialogProps> = ({
 
   const handleRegisterClick = () => {
     setOpen(false);
-    const target = document.getElementById(scrollTargetId);
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
+    window.open("https://forms.gle/ppKpX7thJzqLxi9L9", "_blank")
+    // const target = document.getElementById(scrollTargetId);
+    // if (target) {
+    //   target.scrollIntoView({ behavior: "smooth" });
+    // }
   };
 
   return (
