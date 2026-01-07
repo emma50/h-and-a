@@ -177,7 +177,7 @@ export const serviceCards = [
     id: 8,
     img: "images/service-8.png",
     title: 'Data Analytics',
-    desc: "A program that is designed to equip you with the required skills you need to take on quality assurance and software testing roles.",
+    desc: "Gain the skills to analyze, interpret, and visualize data for smarter business decisions. Our hands-on Data Analytics program equips you with the technical expertise and analytical mindset needed to thrive in today’s data-driven world.",
     url: '/data-analytics',
     urlText: 'Learn more',
   },

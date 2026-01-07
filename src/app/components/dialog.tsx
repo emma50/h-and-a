@@ -1,6 +1,7 @@
 // components/PopupDialog.tsx
 import React, { useEffect, useState } from "react";
 import { Dialog, Button, Box, Text, Heading } from "@chakra-ui/react";
+import { CloseButton } from "@/components/ui/close-button";
 
 interface PopupDialogProps {
   title?: string;
@@ -10,10 +11,10 @@ interface PopupDialogProps {
 }
 
 const PopupDialog: React.FC<PopupDialogProps> = ({
-  title = "🚀 Don't Miss Out! Free Tech Masterclass",
-  description = "This Saturday, October 25th at 11 AM. Limited spots available.",
-  buttonText = "Register Now & Secure My Place",
-  // scrollTargetId = "courses",
+  title = "🚀 Hey Techstars Our 2026 Cohort is Here!!",
+  description = "Check out our free courses to gain practical, in-demand tech skills with expert guidance.",
+  buttonText = "Learn More",
+  scrollTargetId = "courses",
 }) => {
   const [open, setOpen] = useState(false);
 
@@ -36,16 +37,16 @@ const PopupDialog: React.FC<PopupDialogProps> = ({
 
   const handleRegisterClick = () => {
     setOpen(false);
-    window.open("https://forms.gle/ppKpX7thJzqLxi9L9", "_blank")
-    // const target = document.getElementById(scrollTargetId);
-    // if (target) {
-    //   target.scrollIntoView({ behavior: "smooth" });
-    // }
+    // window.open("https://forms.gle/ppKpX7thJzqLxi9L9", "_blank")
+    const target = document.getElementById(scrollTargetId);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
     <Dialog.Root open={open}>
-      <Dialog.Backdrop />
+      <Dialog.Backdrop onClick={() => setOpen(false)} />
       <Dialog.Positioner>
         <Dialog.Content
           borderRadius="xl"
@@ -53,12 +54,28 @@ const PopupDialog: React.FC<PopupDialogProps> = ({
           bg={{ base: "#F0F9FF", _dark: "#000D14" }} 
           p={6}
           maxW="xl"
+          // minH="xl"
+          // maxH="2xl"
+          position="relative"
         >
-          <Dialog.CloseTrigger />
+          {/* <Dialog.CloseTrigger /> */}
+          <CloseButton
+            size="sm"
+            position="absolute"
+            top="2"
+            right="1"
+            onClick={() => setOpen(false)}
+            aria-label="Close dialog"
+            height="1rem"
+            width="0"
+            border="none"
+            outline="none"
+          />
           <Box textAlign="center">
             <Heading 
-              // size="md" 
-              mb={2}
+              // size="md"
+              mt={2} 
+              mb={4}
               fontSize="1.5rem" 
               fontWeight="800" 
               color={{ base: "#036096", _dark: "#69C6FC" }}

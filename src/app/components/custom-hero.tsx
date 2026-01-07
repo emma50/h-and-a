@@ -19,7 +19,8 @@ export default function CustomHero({
       alignItems="center" 
       justifyContent="center"
       // margin="0 auto" 
-      my="4rem" 
+      my="4rem"
+      mb="2rem" 
       bg={{base: "#F0F9FFE5", _dark: "#000D14E5"}}
       gap="1rem"
       p="2rem"

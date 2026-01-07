@@ -30,15 +30,27 @@ export const CardList = () => {
   )
 }
 
+const getCourseStatus = (title: string) => {
+  const t = title.toLowerCase();
+  if (t.includes("ai") || t.includes("qa") || t.includes("software testing")) {
+    return "Free";
+  }
+  if (t.includes("data analytics") || t.includes("data")) {
+    return "£120 - N250,000";
+  }
+  return "Upcoming";
+};
+
 export const CustomCard = ({ img, title, desc, url, urlText }: { img: string; title: string; desc: string; url: string; urlText: string }) => {
+  const status = getCourseStatus(title);
 // #000D14
   return (
     <Card.Root bg={{base: "#FFFFFF", _dark: "#000A0F"}} gap="1" maxWidth="24.688rem" minH="502.04px" overflowY="hidden" height={{base: "556px", md: "529.88px"}}>
       {/* borderRadius="10px" boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)" */}
-      <Box pt="1rem">
+      <Box pt="1rem" position="relative">
         <Image
           src={img}
-          alt="#"
+          alt={title}
           // width="356px"
           width="22.25rem"
           height="262px"
@@ -46,6 +58,18 @@ export const CustomCard = ({ img, title, desc, url, urlText }: { img: string; ti
           borderTopRightRadius="15px"
           m="auto"
         />
+        <Box
+          position="absolute"
+          bottom="10px"
+          right="30px"
+          fontSize="14px"
+          fontFamily="Arial, sans-serif"
+          color="#FFD700"               // gold
+          fontWeight="700"
+          textShadow="0 0 2px rgba(0,0,0,0.6)"
+        >
+          {status}
+        </Box>
       </Box>
       <Box minW={{base: "auto", md: "344px"}} height={{base: "auto", md: "254px"}}>
         <Card.Body gap="2" width="100%" height="auto">

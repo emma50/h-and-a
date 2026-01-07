@@ -9,7 +9,7 @@ import CustomCard from "@/app/components/custom-card"
 
 export default function ProgramPage({data}: {data: any;}) {
   // @ts-ignore
-  const {hero, learning, why} = data;
+  const {hero, learning, why, duration, startDates, learningHours, schedule} = data;
 
   const clickHandler = () => {
     window.open(data.regLink, "_blank");
@@ -24,6 +24,32 @@ export default function ProgramPage({data}: {data: any;}) {
         desc={hero.desc}
         btnText={hero.actionBtn}
       />
+
+      <Box px="2rem" py="20px" pt="0" mb="2rem" maxW="1200px" mx="auto">
+        <Flex justify="center" gap="2rem" wrap="wrap">
+          <Box textAlign="center">
+            <Text fontWeight="600">Duration</Text>
+            <Text>{duration || "TBA"}</Text>
+          </Box>
+
+          <Box textAlign="center">
+            <Text fontWeight="600">Course date{startDates && startDates.length > 1 ? "s" : ""}</Text>
+            <Text>
+              {startDates && startDates.length > 0 ? startDates.join(", ") : "Start date to be advised"}
+            </Text>
+          </Box>
+
+          <Box textAlign="center">
+            <Text fontWeight="600">Learning hours</Text>
+            <Text>{learningHours || "TBA"}</Text>
+          </Box>
+
+          <Box textAlign="center">
+            <Text fontWeight="600">Schedule</Text>
+            <Text>{schedule || "TBA"}</Text>
+          </Box>
+        </Flex>
+      </Box>
 
       {/* What you will learn */}
       <Flex

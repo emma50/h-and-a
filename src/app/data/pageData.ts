@@ -60,6 +60,78 @@ export const pageData = {
         ],
       },
     },
+    duration: "4 weeks",
+    startDates: ["12 Jan 2026", "08 Feb 2026"], // empty array [] => upcoming
+    learningHours: "120 hours (10 hrs/week)",
+    schedule: "Weekdays (Mon - Fri) | 7pm - 9pm GMT",
+    regLink: "https://forms.gle/2khskeTs964tirjr8",
+  },
+
+  "software-automation": {
+    hero: {
+      title: "⁠Software Automation Testing (QA)",
+      desc: "Master manual and automation testing techniques using Selenium, JIRA, Postman, and TestNG. Ensure flawless performance for apps and software systems.",
+      actionBtn: "Register Now",
+    },
+    learning: {
+      img: "/images/dynamic-pages/software-automation-img-1.png",
+      title: "What You’ll Learn in Our Software Automation Testing",
+      desc: "The Software Automation Testing (QA) program is designed to equip learners with the essential skills to ensure software products meet the highest standards of quality and performance. This course provides a deep understanding of testing methodologies, automation tools, and real-world testing frameworks. Students will learn how to create and execute automated test scripts, identify bugs, streamline testing processes, and work collaboratively within development teams to enhance product reliability. By the end of the program, participants will be able to confidently design efficient testing strategies that reduce manual effort, accelerate release cycles, and improve overall user satisfaction.",
+    },
+    why: {
+      title: "Why Software Testing?",
+      desc: "Every product needs precision and reliability — that’s where QA engineers come in. They ensure software works seamlessly, efficiently, and securely before reaching users.",
+      list: [
+        {
+          id: 1,
+          title: "Guarantee Product Quality",
+          desc: "Testing ensures that applications meet user expectations and business goals.",
+        },
+        {
+          id: 2,
+          title: "Build a Critical Career Path",
+          desc: "QA testing opens opportunities in every software-driven industry.",
+        },
+      ],
+      actionBtn: "Register Now",
+      img: "/images/dynamic-pages/software-automation-img-2.png",
+      benefits: {
+        title: "Benefits of Studying with H&A Infotech",
+        desc: "We combine manual and automation testing techniques to give learners a comprehensive QA foundation.",
+        cardOne: [
+          {
+            id: 1,
+            title: "Hands-On Tool Practice",
+            desc: "Learn Selenium, Postman, and JIRA to automate test processes.",
+            icon: "/images/dynamic-pages/benefit-1.png",
+          },
+          {
+            id: 2,
+            title: "Agile Testing Frameworks",
+            desc: "Understand CI/CD and how testing integrates into Agile workflows.",
+            icon: "/images/dynamic-pages/benefit-2.png",
+          },
+        ],
+        cardTwo: [
+          {
+            id: 1,
+            title: "Real Testing Environments",
+            desc: "Apply testing strategies on real project simulations.",
+            icon: "/images/dynamic-pages/benefit-3.png",
+          },
+          {
+            id: 2,
+            title: "Career-Focused Mentorship",
+            desc: "Receive guidance to transition from learning to professional QA roles.",
+            icon: "/images/dynamic-pages/benefit-4.png",
+          },
+        ],
+      },
+    },
+    duration: "4 weeks",
+    startDates: ["12 Jan 2026", "08 Feb 2026"], // empty array [] => upcoming
+    learningHours: "120 hours (10 hrs/week)",
+    schedule: "Weekend (Sat) | 11:30am - 1:30pm GMT",
     regLink: "https://forms.gle/2khskeTs964tirjr8",
   },
 
@@ -124,6 +196,10 @@ export const pageData = {
         ],
       },
     },
+    duration: "",
+    startDates: [], // upcoming -> show "Start date to be advised"
+    learningHours: "",
+    schedule: "",
     regLink: "https://forms.gle/E6pqNBT85fFQwp6x6",
   },
 
@@ -188,6 +264,9 @@ export const pageData = {
         ],
       },
     },
+    duration: "12 weeks",
+    startDates: ["15 Feb 2026", "10 May 2026"], // empty array [] => upcoming
+    learningHours: "120 hours (10 hrs/week)",
     regLink: "https://forms.gle/rB1cbjA3QTK3WWkD7",
   },
 
@@ -316,6 +395,10 @@ export const pageData = {
         ],
       },
     },
+    duration: "",
+    startDates: [], // upcoming -> show "Start date to be advised"
+    learningHours: "",
+    schedule: "",
     regLink: " https://forms.gle/2iGqfYbwDUsMUGye7",
   },
 
@@ -380,6 +463,10 @@ export const pageData = {
         ],
       },
     },
+    duration: "",
+    startDates: [], // upcoming -> show "Start date to be advised"
+    learningHours: "",
+    schedule: "",
     regLink: "https://forms.gle/E8r61v5mn3EhtxCd8",
   },
 
@@ -444,6 +531,10 @@ export const pageData = {
         ],
       },
     },
+    duration: "",
+    startDates: [], // upcoming -> show "Start date to be advised"
+    learningHours: "",
+    schedule: "",
     regLink: "https://forms.gle/vsq7QFHtt8tKCkMq9",
   },
 
@@ -508,6 +599,10 @@ export const pageData = {
         ],
       },
     },
+    duration: "",
+    startDates: [], // upcoming -> show "Start date to be advised"
+    learningHours: "",
+    schedule: "",
     regLink: "https://forms.gle/o8zBxfAQibj5sk497",
   },
 };
