@@ -67,6 +67,46 @@ export const pageData = {
     regLink: "https://forms.gle/2khskeTs964tirjr8",
   },
 
+  "ai": {
+    hero: {
+      title: "Artificial Intelligence",
+      desc: "Learn the fundamentals of AI and.concepts that would help you gain an advantage in your career with respect to AI.",
+      actionBtn: "Register Interest"
+    },
+    learning: {
+      img: "/images/dynamic-pages/ai-img-1.png",
+      title: "What You’ll Learn in Our AI Master Class",
+      desc: "We designed this masterclass to bridge the gap between AI concepts and real-world application. From understanding AI fundamentals to using practical tools and automations, you’ll gain the skills needed to apply AI confidently in everyday work."
+    },
+    why: {
+      title: "Why AI?",
+      desc: "AI isn’t about hype or complex theory. It’s about using the right tools to work smarter and solve real problems. This masterclass focuses on practical understanding, so you can actually use AI, not just talk about it. Why this matters: AI is already shaping everyday work, not just tech roles. Knowing how to use AI tools gives you a clear advantage. AI helps simplify tasks, improve efficiency, and save time. Practical AI skills are useful across careers and industries. Confidence with AI starts with understanding, not complexity",
+      list: [
+        { id: 1, title: "Real-world Projects", desc: "Work on end-to-end AI projects you can showcase." },
+        { id: 2, title: "Industry Tools", desc: "Practice with Python, scikit-learn, and modern model deployment tools." }
+      ],
+      actionBtn: "Register Interest",
+      img: "/images/dynamic-pages/ai-img-2.png",
+      benefits: {
+        title: "Benefits of Our AI Program",
+        desc: "A practical, project-driven curriculum that prepares you to work on real AI systems.",
+        cardOne: [
+          { id: 1, title: "Model Building", desc: "Supervised & unsupervised techniques", icon: "/images/dynamic-pages/benefit-1.png" },
+          { id: 2, title: "Evaluation & Bias", desc: "Robust metrics & fairness checks", icon: "/images/dynamic-pages/benefit-2.png" }
+        ],
+        cardTwo: [
+          { id: 1, title: "Deployment", desc: "Serving models and building simple APIs", icon: "/images/dynamic-pages/benefit-3.png" },
+          { id: 2, title: "Career Support", desc: "Interview prep & portfolio guidance", icon: "/images/dynamic-pages/benefit-4.png" }
+        ]
+      }
+    },
+    duration: "1 day",
+    startDates: ["24 Jan 2026"], // empty → shows "Start date to be advised"
+    learningHours: "2 hours",
+    schedule: "Weekend (Sat) | 11am - 1pm GMT",
+    regLink: "https://forms.gle/your-ai-registration-link"
+  },
+
   "software-automation": {
     hero: {
       title: "⁠Software Automation Testing (QA)",

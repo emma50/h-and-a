@@ -181,6 +181,14 @@ export const serviceCards = [
     url: '/data-analytics',
     urlText: 'Learn more',
   },
+  {
+    id: 9,
+    img: "/images/service-9.png",
+    title: "Artificial Intelligence",
+    desc: "Learn the fundamentals of AI and.concepts that would help you gain an advantage in your career with respect to AI.",
+    url: "/ai",
+    urlText: "Learn more",
+  },
 ]
 
 export const swiperCards = [
