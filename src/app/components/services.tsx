@@ -32,7 +32,7 @@ export const CardList = () => {
 
 const getCourseStatus = (title: string) => {
   const t = title.toLowerCase();
-  if (t.includes("ai") || t.includes("qa") || t.includes("software testing")) {
+  if (t.includes("artificial intelligence") || t.includes("qa") || t.includes("software testing")) {
     return "Free";
   }
   if (t.includes("data analytics") || t.includes("data")) {
