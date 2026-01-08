@@ -118,6 +118,30 @@ export const contacts = [
 export const serviceCards = [
   {
     id: 1,
+    img: "/images/service-9.png",
+    title: "Artificial Intelligence",
+    desc: "Learn the fundamentals of AI and.concepts that would help you gain an advantage in your career with respect to AI.",
+    url: "/ai",
+    urlText: "Learn more",
+  },
+  {
+    id: 2,
+    img: "images/service-8.png",
+    title: 'Data Analytics',
+    desc: "Gain the skills to analyze, interpret, and visualize data for smarter business decisions. Our hands-on Data Analytics program equips you with the technical expertise and analytical mindset needed to thrive in today’s data-driven world.",
+    url: '/data-analytics',
+    urlText: 'Learn more',
+  },
+  {
+    id: 3,
+    img: "images/service-6.svg",
+    title: 'QA/Software Testing',
+    desc: "A program that is designed to equip you with the required skills you need to take on quality assurance and software testing roles.",
+    url: '/software-automation',
+    urlText: 'Learn more',
+  },
+  {
+    id: 4,
     img: "/images/service-1.png",
     title: 'Frontend Development',
     desc: "Start your journey to becoming a full-stack developer. Learn how to write different kinds of code for complex frontend and backend tasks.",
@@ -125,7 +149,7 @@ export const serviceCards = [
     urlText: 'Learn more',
   },
   {
-    id: 2,
+    id: 5,
     img: "images/service-2.png",
     title: 'Project Management',
     desc: "Set yourself up for success and a rewarding career with our product school.",
@@ -133,7 +157,7 @@ export const serviceCards = [
     urlText: 'Learn more',
   },
   {
-    id: 3,
+    id: 6,
     img: "images/service-3.svg",
     title: 'Graphic Design',
     // desc: "Gain the knowledge to help you build a career in Design.",
@@ -142,7 +166,7 @@ export const serviceCards = [
     urlText: 'Learn more',
   },
   {
-    id: 4,
+    id: 7,
     img: "images/service-4.png",
     title: 'Content Creation',
     desc: "Set yourself up for success and a rewarding career with our product school.",
@@ -150,7 +174,7 @@ export const serviceCards = [
     urlText: 'Learn more',
   },
   {
-    id: 5,
+    id: 8,
     img: "images/service-5.png",
     title: 'Cyber Security',
     desc: "Learn the basic skills you need to transition into a career in DevOps and Cloud Engineer.",
@@ -158,36 +182,12 @@ export const serviceCards = [
     urlText: 'Learn more',
   },
   {
-    id: 6,
-    img: "images/service-6.svg",
-    title: 'QA/Software Testing',
-    desc: "A program that is designed to equip you with the required skills you need to take on quality assurance and software testing roles.",
-    url: '/software-automation',
-    urlText: 'Learn more',
-  },
-  {
-    id: 7,
+    id: 9,
     img: "images/service-7.png",
     title: 'Blockchain',
     desc: "Learn the basic skills you need to transition into a career in DevOps and Cloud Engineer.",
     url: '/blockchain-tech',
     urlText: 'Learn more',
-  },
-  {
-    id: 8,
-    img: "images/service-8.png",
-    title: 'Data Analytics',
-    desc: "Gain the skills to analyze, interpret, and visualize data for smarter business decisions. Our hands-on Data Analytics program equips you with the technical expertise and analytical mindset needed to thrive in today’s data-driven world.",
-    url: '/data-analytics',
-    urlText: 'Learn more',
-  },
-  {
-    id: 9,
-    img: "/images/service-9.png",
-    title: "Artificial Intelligence",
-    desc: "Learn the fundamentals of AI and.concepts that would help you gain an advantage in your career with respect to AI.",
-    url: "/ai",
-    urlText: "Learn more",
   },
 ]
 

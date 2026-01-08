@@ -35,7 +35,7 @@ export default function ProgramPage({data}: {data: any;}) {
           <Box textAlign="center">
             <Text fontWeight="600">Course date{startDates && startDates.length > 1 ? "s" : ""}</Text>
             <Text>
-              {startDates && startDates.length > 0 ? startDates.join(", ") : "Start date to be advised"}
+              {startDates && startDates.length > 0 ? startDates.join(" - ") : "Start date to be advised"}
             </Text>
           </Box>
 

@@ -71,7 +71,7 @@ export const pageData = {
     hero: {
       title: "Artificial Intelligence",
       desc: "Learn the fundamentals of AI and.concepts that would help you gain an advantage in your career with respect to AI.",
-      actionBtn: "Register Interest"
+      actionBtn: "Register Now"
     },
     learning: {
       img: "/images/dynamic-pages/ai-img-1.png",
@@ -85,7 +85,7 @@ export const pageData = {
         { id: 1, title: "Real-world Projects", desc: "Work on end-to-end AI projects you can showcase." },
         { id: 2, title: "Industry Tools", desc: "Practice with Python, scikit-learn, and modern model deployment tools." }
       ],
-      actionBtn: "Register Interest",
+      actionBtn: "Register Now",
       img: "/images/dynamic-pages/ai-img-2.png",
       benefits: {
         title: "Benefits of Our AI Program",
@@ -104,7 +104,7 @@ export const pageData = {
     startDates: ["24 Jan 2026"], // empty → shows "Start date to be advised"
     learningHours: "2 hours",
     schedule: "Weekend (Sat) | 11am - 1pm GMT",
-    regLink: "https://forms.gle/your-ai-registration-link"
+    regLink: "https://forms.gle/V5QVGWgMFD7uyomo9"
   },
 
   "software-automation": {
@@ -172,7 +172,7 @@ export const pageData = {
     startDates: ["12 Jan 2026", "08 Feb 2026"], // empty array [] => upcoming
     learningHours: "120 hours (10 hrs/week)",
     schedule: "Weekend (Sat) | 11:30am - 1:30pm GMT",
-    regLink: "https://forms.gle/2khskeTs964tirjr8",
+    regLink: "https://forms.gle/jKKVrULQ6RUsuiTz6",
   },
 
   "blockchain-tech": {
