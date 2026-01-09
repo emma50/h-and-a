@@ -62,7 +62,7 @@ export const pageData = {
     },
     duration: "4 weeks",
     startDates: ["12 Jan 2026", "08 Feb 2026"], // empty array [] => upcoming
-    learningHours: "120 hours (10 hrs/week)",
+    learningHours: "40 hours (10 hrs/week)",
     schedule: "Weekdays (Mon - Fri) | 7pm - 9pm GMT",
     regLink: "https://forms.gle/2khskeTs964tirjr8",
   },
@@ -168,9 +168,9 @@ export const pageData = {
         ],
       },
     },
-    duration: "4 weeks",
-    startDates: ["12 Jan 2026", "08 Feb 2026"], // empty array [] => upcoming
-    learningHours: "120 hours (10 hrs/week)",
+    duration: "2 weeks",
+    startDates: ["24 Jan 2026", "07 Feb 2026"], // empty array [] => upcoming
+    learningHours: "6 hours (2 hrs/week)",
     schedule: "Weekend (Sat) | 11:30am - 1:30pm GMT",
     regLink: "https://forms.gle/jKKVrULQ6RUsuiTz6",
   },
