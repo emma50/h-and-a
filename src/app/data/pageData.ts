@@ -61,7 +61,7 @@ export const pageData = {
       },
     },
     duration: "4 weeks",
-    startDates: ["12 Jan 2026", "08 Feb 2026"], // empty array [] => upcoming
+    startDates: ["16 Feb 2026", "13 Mar 2026"], // empty array [] => upcoming
     learningHours: "40 hours (10 hrs/week)",
     schedule: "Weekdays (Mon - Fri) | 7pm - 9pm GMT",
     regLink: "https://forms.gle/2khskeTs964tirjr8",
@@ -70,7 +70,7 @@ export const pageData = {
   "ai": {
     hero: {
       title: "Artificial Intelligence",
-      desc: "Learn the fundamentals of AI and.concepts that would help you gain an advantage in your career with respect to AI.",
+      desc: "Learn the fundamentals of AI and concepts that would help you gain an advantage in your career with respect to AI.",
       actionBtn: "Register Now"
     },
     learning: {
