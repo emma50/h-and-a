@@ -1,5 +1,4 @@
-import { cohortLink } from "@/utils/data";
-import { Text, Box, Flex, Link, Image, Button } from "@chakra-ui/react"
+import { Text, Box, Flex, Image, Button } from "@chakra-ui/react"
 import { LiaLightbulbSolid } from "react-icons/lia";
 
 export default function Hero() {
@@ -42,11 +41,6 @@ export const Left = () => {
 
         {/* Buttons */}
         <Flex gap="1rem" flexDirection={{base: "column", md: "row"}}>
-          <Box display="flex" justifyContent="center">
-            <Link href={cohortLink} bg={{base: "#036096", _dark: "#69C6FC"}} color={{base: "#FFFFFF", _dark: "#000000"}} px="1.25rem" py="0.625rem" borderRadius="0.313rem" fontSize="1rem" fontWeight="600" width="204px" height="60px" rounded="7px" display="flex" justifyContent="center" textDecoration="none">
-              Register now
-            </Link>
-          </Box>
           <Box display="flex" justifyContent="center">
             <Button onClick={handleCoursesClick}  bg={{base: "#F0F9FF", _dark: "#000D14"}} color={{base: "#036096", _dark: "#69C6FC"}} px="1.25rem" py="0.625rem" borderRadius="0.313rem" fontSize="1rem" fontWeight="600" width="204px" height="60px" rounded="7px" border={{base: "1px solid #036096", _dark: "1px solid #69C6FC"}} display="flex" justifyContent="center" textDecoration="none">
               Explore courses
