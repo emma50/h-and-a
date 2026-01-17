@@ -37,11 +37,12 @@ const PopupDialog: React.FC<PopupDialogProps> = ({
 
   const handleRegisterClick = () => {
     setOpen(false);
-    // window.open("https://forms.gle/ppKpX7thJzqLxi9L9", "_blank")
-    const target = document.getElementById(scrollTargetId);
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
+    setTimeout(() => {
+      const target = document.getElementById(scrollTargetId);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
   };
 
   return (
