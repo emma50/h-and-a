@@ -93,12 +93,12 @@ const getCourseStatus = (title: string) => {
   const t = title.toLowerCase();
   if (
     t.includes("artificial intelligence") ||
-    t.includes("qa") ||
-    t.includes("software testing")
+    t.includes("software testing") ||
+    t.includes("data analytics")
   ) {
     return "Free";
   }
-  if (t.includes("data analytics") || t.includes("data")) {
+  if (t.includes("data")) {
     return "£130 - N250,000";
   }
   return "Upcoming";

@@ -11,9 +11,9 @@ interface PopupDialogProps {
 }
 
 const PopupDialog: React.FC<PopupDialogProps> = ({
-  title = "🚀 Hey Techstars Our 2026 Cohort is Here!!",
-  description = "Check out our free courses to gain practical, in-demand tech skills with expert guidance.",
-  buttonText = "Learn More",
+  title = "🎓 Free Upcoming DA & AI Demo Classes",
+  description = "Join our free Data Analytics class launching April 25th from 3pm–5pm, plus our AI demo class both free. Explore practical tech skills and hands-on AI learning with zero cost.",
+  buttonText = "See Free Classes",
   scrollTargetId = "courses",
 }) => {
   const [open, setOpen] = useState(false);
@@ -52,7 +52,7 @@ const PopupDialog: React.FC<PopupDialogProps> = ({
         <Dialog.Content
           borderRadius="xl"
           boxShadow="lg"
-          bg={{ base: "#F0F9FF", _dark: "#000D14" }} 
+          bg={{ base: "#F0F9FF", _dark: "#000D14" }}
           p={6}
           maxW="xl"
           // minH="xl"
@@ -73,18 +73,20 @@ const PopupDialog: React.FC<PopupDialogProps> = ({
             outline="none"
           />
           <Box textAlign="center">
-            <Heading 
+            <Heading
               // size="md"
-              mt={2} 
+              mt={2}
               mb={4}
-              fontSize="1.5rem" 
-              fontWeight="800" 
+              fontSize="1.5rem"
+              fontWeight="800"
               color={{ base: "#036096", _dark: "#69C6FC" }}
             >
               {title}
             </Heading>
-            <Text mb={4} color={{base: "#000000", _dark: "#ffffff"}}>{description}</Text>
-            <Button 
+            <Text mb={4} color={{ base: "#000000", _dark: "#ffffff" }}>
+              {description}
+            </Text>
+            <Button
               bg={{ base: "#036096", _dark: "#69C6FC" }}
               fontWeight="bold"
               onClick={handleRegisterClick}
