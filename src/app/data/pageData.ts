@@ -129,9 +129,9 @@ export const pageData = {
       },
     },
     duration: "1 day",
-    startDates: ["24 Jan 2026"], // empty → shows "Start date to be advised"
+    startDates: ["18 April 2026"], // empty → shows "Start date to be advised"
     learningHours: "2 hours",
-    schedule: "Weekend (Sat) | 11am - 1pm GMT",
+    schedule: "Weekend (Sat) | 5:30 - 7:30pm GMT",
     regLink: "https://forms.gle/V5QVGWgMFD7uyomo9",
   },
 
