@@ -91,11 +91,7 @@ export const CardList = () => {
 
 const getCourseStatus = (title: string) => {
   const t = title.toLowerCase();
-  if (
-    t.includes("artificial intelligence") ||
-    t.includes("software testing") ||
-    t.includes("data analytics")
-  ) {
+  if (t.includes("artificial intelligence") || t.includes("data analytics")) {
     return "Free";
   }
   if (t.includes("data")) {
