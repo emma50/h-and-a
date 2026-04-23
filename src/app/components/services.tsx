@@ -82,6 +82,7 @@ export const CardList = () => {
             desc={card.desc}
             url={card.url}
             urlText={card.urlText}
+            regLink={card.regLink}
           />
         );
       })}
@@ -106,12 +107,14 @@ export const CustomCard = ({
   desc,
   url,
   urlText,
+  regLink,
 }: {
   img: string;
   title: string;
   desc: string;
   url: string;
   urlText: string;
+  regLink: string;
 }) => {
   const status = getCourseStatus(title);
   // #000D14
@@ -182,9 +185,20 @@ export const CustomCard = ({
           fontSize="14.32px"
           lineHeight="21.48px"
           color={{ base: "#0D0D0D", _dark: "#ffffff" }}
+          gap="3rem"
         >
           <a href={url}>{urlText}</a>
-          {/* <Button variant="solid">{urlText}</Button> */}
+          {regLink && (
+            <Button
+              variant="solid"
+              bg="#69C6FC"
+              color={{ base: "#FFFFFF", _dark: "#000D14" }}
+            >
+              <a href={regLink} target="_blank" rel="noopener noreferrer">
+                Register
+              </a>
+            </Button>
+          )}
         </Card.Footer>
       </Box>
     </Card.Root>

@@ -122,6 +122,7 @@ export const serviceCards = [
     desc: "Gain the skills to analyze, interpret, and visualize data for smarter business decisions. Our hands-on Data Analytics program equips you with the technical expertise and analytical mindset needed to thrive in today’s data-driven world.",
     url: "/data-analytics",
     urlText: "Learn more",
+    regLink: "https://forms.gle/2khskeTs964tirjr8",
   },
   {
     id: 2,
@@ -130,6 +131,7 @@ export const serviceCards = [
     desc: "Learn the fundamentals of AI and.concepts that would help you gain an advantage in your career with respect to AI.",
     url: "/ai",
     urlText: "Learn more",
+    regLink: "https://forms.gle/V5QVGWgMFD7uyomo9",
   },
   {
     id: 3,
@@ -138,6 +140,7 @@ export const serviceCards = [
     desc: "A program that is designed to equip you with the required skills you need to take on quality assurance and software testing roles.",
     url: "/software-automation",
     urlText: "Learn more",
+    regLink: "",
   },
   {
     id: 4,
@@ -146,6 +149,7 @@ export const serviceCards = [
     desc: "Start your journey to becoming a full-stack developer. Learn how to write different kinds of code for complex frontend and backend tasks.",
     url: "/frontend-development",
     urlText: "Learn more",
+    regLink: "",
   },
   {
     id: 5,
@@ -154,6 +158,7 @@ export const serviceCards = [
     desc: "Set yourself up for success and a rewarding career with our product school.",
     url: "/project-management",
     urlText: "Learn more",
+    regLink: "",
   },
   {
     id: 6,
@@ -163,6 +168,7 @@ export const serviceCards = [
     desc: "Gain the basic knowledge to help you build a career in Design and grow through fundamental user-centred approaches to stunning user-interfaces.",
     url: "/graphic-design",
     urlText: "Learn more",
+    regLink: "",
   },
   {
     id: 7,
@@ -171,6 +177,7 @@ export const serviceCards = [
     desc: "Set yourself up for success and a rewarding career with our product school.",
     url: "/content-creation",
     urlText: "Learn more",
+    regLink: "",
   },
   {
     id: 8,
@@ -179,6 +186,7 @@ export const serviceCards = [
     desc: "Learn the basic skills you need to transition into a career in DevOps and Cloud Engineer.",
     url: "/cyber-security",
     urlText: "Learn more",
+    regLink: "",
   },
   {
     id: 9,
@@ -187,6 +195,7 @@ export const serviceCards = [
     desc: "Learn the basic skills you need to transition into a career in DevOps and Cloud Engineer.",
     url: "/blockchain-tech",
     urlText: "Learn more",
+    regLink: "",
   },
 ];
 
